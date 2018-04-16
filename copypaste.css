@@ -1,0 +1,312 @@
+#sliderCon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+}
+#slider {
+  position: absolute; 
+  height: 80%;
+  top: 10%;
+
+  /*width: auto;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);*/
+
+  /*display: flex;
+  justify-content: center;*/
+
+  background-color: magenta;
+  z-index: 200;
+  overflow: hidden;
+}
+.preview{
+  position: absolute;
+  height: 100%;
+  background-color: pink;
+  background-image: url('./pho.png');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+
+}
+.controls {
+  position: relative;
+  float: right;
+  height: 100%;
+  width: 100px;
+  background-color: skyblue;
+}
+#img1{
+  position: relative;
+  float: left;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+
+<div class="center">
+
+            <div class="centerRow">
+
+              <div class="photo">
+                <div class='centerThatPho'>
+                  <img id="pic1" src="./pho.png"></img>
+                </div>
+                <div id="backgroundPhoto1"></div>
+              </div>
+
+              <div class="photo">
+                <div class='centerThatPho'>
+                  <img id="pic2" src="./pho.png"></img>
+                </div>
+                <div id="backgroundPhoto2"></div>
+              </div>
+
+              <div class="photo">
+                <div class='centerThatPho'>
+                  <img id="pic3" src="./pho.png"></img>
+                </div>
+                <div id="backgroundPhoto3"></div>
+              </div>
+
+              <div class="photo">
+                <div class='centerThatPho'>
+                  <img id="pic4" src="./pho.png"></img>
+                </div>
+                <div id="backgroundPhoto4"></div>
+              </div>
+
+            </div>
+
+
+            <div class="centerRow">
+
+              <div class="photo">
+                <div class='centerThatPho'>
+                  <img id="pic5" src="./pho.png"></img>
+                </div>
+                <div id="backgroundPhoto5"></div>
+              </div>
+
+              <div class="photo">
+                <div class='centerThatPho'>
+                  <img id="pic6" src="./pho.png"></img>
+                </div>
+                <div id="backgroundPhoto6"></div>
+              </div>
+
+              <div class="photo">
+                <div class='centerThatPho'>
+                  <img id="pic7" src="./pho.png"></img>
+                </div>
+                <div id="backgroundPhoto7"></div>
+              </div>
+
+              <div class="photo">
+                <div class='centerThatPho'>
+                  <img id="pic8" src="./pho.png"></img>
+                </div>
+                <div id="backgroundPhoto8"></div>
+              </div>
+
+            </div>
+
+
+            <div class="centerRow">
+
+              <div class="photo">
+                <div class='centerThatPho'>
+                  <img id="pic9" src="./pho.png"></img>
+                </div>
+                <div id="backgroundPhoto9"></div>
+              </div>
+
+              <div class="photo">
+                <div class='centerThatPho'><i
+                  mg id="pic10" src="./pho.png"></img><
+                  /div>
+                <div id="backgroundPhoto10"></div>
+              </div>
+
+              <div class="photo">
+                <div class='centerThatPho'><i
+                  mg id="pic11" src="./pho.png"></img><
+                  /div>
+                <div id="backgroundPhoto11"></div>
+              </div>
+
+              <div class="photo">
+                <div class='centerThatPho'><i
+                  mg id="pic12" src="./pho.png"></img><
+                  /div>
+                <div id="backgroundPhoto12"></div>
+              </div>
+              
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+          <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Belozerov</title>
+    <meta charset="utf-8">
+  </head>
+  <body style="font-family: arial; padding: 0;">
+    <table 
+    style="padding: 15px 30px;
+           margin: 0 auto;
+           border: 20px solid gold;
+           background: url(http://arthuriooo.ru/texture2.png);"
+    cellpadding="0" 
+    cellspacing="0" 
+    width="800" >
+
+      <tr><td style="padding: 20px"></td></tr>
+
+      <tr 
+      style="" 
+      width="100%" 
+      align="center">
+        <td width="20%"></td>
+        <td width="60%"
+            style="font-weight: 600;
+                 border-radius: 30px;
+                   padding: 15px 20px;
+                   font-size: 40px;
+                   line-height: 60px;
+                   text-transform: uppercase;
+                   background-color: RGBA(239, 205, 53, 0.7);
+                   color: white;
+                   border: 5px solid white">
+          B E L O Z E R O V
+        </td>
+        <td width="20%"></td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td style="padding: 20px; 
+               color:white; 
+               font-size: 25px;" 
+          align="center">mail <small>by</small> ARTHURIOOO</td>
+        <td></td>
+      </tr>
+
+      <tr><td style="padding: 15px"></td></tr>
+
+      <tr 
+      style="" 
+      width="100%"
+      align="center">
+        <td width="20%"></td>
+        <td width="60%"
+            style="border-radius: 30px;
+                   padding: 15px 20px;
+                   font-size: 45px;
+                   line-height: 50px;
+                   text-transform: uppercase;
+                   background-color: RGBA(239, 205, 53, 0.7);
+                   color: white;
+                   border: 5px solid white">
+          ' . $subject_topic . '
+        </td>
+        <td width="20%"></td>
+      </tr>
+
+      <tr><td style="padding: 20px;"></td></tr>
+
+      <tr 
+      style="font-size: 35px" 
+      width="80%" 
+      align="center">
+        <td></td>
+        <td style="color: white;">
+          ' . $note . '
+        </td>
+        <td></td>
+      </tr>
+
+      <tr><td style="padding: 25px;"></td></tr>
+
+      <tr>
+        <td></td>
+        <td style="border-radius: 20px;
+                   padding: 10px 10px;
+                   font-size: 20px;
+                   line-height: 30px;
+                   text-transform: uppercase;
+                   background-color: RGBA(255, 84, 165, 0.6);
+                   text-align: center;">
+              <a href="arthuriooo.ru" style="text-decoration: none; color: white;"><small>перейти на</small><br>arthuriooo.ru</a>
+          </td>
+        <td></td>
+      </tr>
+
+      <tr><td style="padding: 15px;"></td></tr>
+
+      <tr>
+        <td></td>
+        <td style="border-radius: 20px;
+                   padding: 10px 10px;
+                   font-size: 20px;
+                   line-height: 30px;
+                   text-transform: uppercase;
+                   background-color: RGBA(255, 84, 165, 0.6);
+                   text-align: center;">
+              <a href="trello.com" style="text-decoration: none; color: white;"><small>перейти на</small><br>trello.com</a>
+          </td>
+        <td></td>
+      </tr>
+
+      <tr><td style="padding: 15px;"></td></tr>
+
+      <tr>
+        <td></td>
+        <td style="font-size: 20px; 
+                 color: white; 
+                 text-align: center;">если письмо отображается неправильно, то идите нахуй, я старался</td>
+        <td></td>
+      </tr>
+
+      <tr><td style="padding: 10px"></td></tr>
+
+      <tr>
+        <td></td>
+        <td style="text-align: center">
+          <a href="" style="color: RGBA(255, 84, 165, 1.00); 
+                    font-size: 25px">пойти нахуй</a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr><td style="padding: 20px"></td></tr>
+
+      <tr>
+        <td></td>
+        <td style="text-align: center; 
+               color: white; 
+               font-weight: 800; 
+               font-size: 60px; 
+               text-transform: uppercase;">made by<br>arthuriooo</td>
+        <td></td>
+      </tr>
+
+      <tr><td style="padding: 20px"></td></tr>
+
+    </table>
+  </body>
+  </html>

@@ -1,0 +1,503 @@
+@font-face {
+  font-family: lane; 
+  src: url(lane.ttf);
+}
+/*@keyframes huy {
+  0% { width: 100px; height: 100px; }
+  50% { width: 130px; height: 130px; }
+}*/
+body {
+  font-family: lane, arial;
+}
+#home {
+  position: absolute;
+  width: 100%;
+  height: 110%;
+  top: -10%;
+
+  background-image: url("./back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+header {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+.logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0;
+  /*padding: 10px 12px;*/
+  z-index: 10;
+  box-sizing: border-box;
+  height: 100%;
+  
+}
+.logo p {
+  margin: 0;
+  position: relative;
+  top: 20px;
+  left: 35px;
+  font-size: 28px;
+  color: #ece8e8;
+}
+.menu {
+  position: absolute;
+  right: 0;
+  height: 80px;
+  z-index: 20;
+  position: 0;
+}
+.menu ul {
+  height: 100%;
+  margin: 0;
+}
+.menu li {
+  float: left;
+  display: block;
+  list-style: none;
+}
+
+.dark {
+  color: #c9c9c9;
+  font-size: 26px;
+  text-decoration: none;
+  padding: 0 20px;
+  position: relative;
+  top: 27px;
+  font-weight: 300;
+}
+.menu li:last-child {
+  padding-right: 60px;
+}
+.dark:hover {
+  color: #fff;
+}
+
+.light {
+  color: #656969;
+  font-size: 26px;
+  text-decoration: none;
+  padding: 0 20px;
+  position: relative;
+  top: 27px;
+  font-weight: 300;
+}
+.light:hover {
+  color: black;
+}
+
+#works {
+  position: absolute;
+  width: 100%;
+  top: 130px;
+  bottom: 5px;
+
+  /*background-color: skyblue;*/
+
+  display: none;
+}
+
+.main {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 120px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: stretch;
+
+  -moz-display: flex;
+  -moz-flex-direction: row;
+  -moz-justify-content: center;
+  -moz-align-content: stretch;
+
+  -webkit-display: flex;
+  -webkit-flex-direction: row;
+  -webkit-justify-content: center;
+  -webkit-align-content: stretch;
+
+  -ms-display: flex;
+  -ms-flex-direction: row;
+  -ms-justify-content: center;
+  -ms-align-content: stretch;
+
+  /*background-color: red;*/
+
+  /*display: none;*/
+}
+.left {
+  position: absolute;
+  height: 100%;
+  width: 8%;
+  left: 2%;
+  cursor: pointer;
+
+  opacity: 0.6;
+}
+.left img {
+  position: absolute;
+  height: 4.6%;
+  top: 47% ;
+  right: 10px;
+}
+.right {
+  position: absolute;
+  height: 100%;
+  width: 8%;
+  right: 2%;
+  cursor: pointer;
+
+  opacity: 0.6;
+}
+.right img {
+  position: absolute;
+  height: 4.6%;
+  top: 47% ;
+  left: 10px;
+}
+
+.left:hover, .right:hover {
+  opacity: 1;
+}
+
+.center {
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  left: 10%;
+
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  -moz-display: flex;
+  -moz-flex-wrap: wrap;
+
+  -webkit-display: flex;
+  -webkit-flex-wrap: wrap;
+
+  -ms-display: flex;
+  -ms-flex-wrap: wrap;
+
+  /*background-color: yellow;*/
+} 
+.photo {
+  position: relative;
+  /*width: 25%;
+  height: 33%;*/
+  margin: 1%;
+  background-color: rgba(216, 216, 216, 1);
+  filter: grayscale(100%);
+  cursor: pointer;
+
+  max-height: 32%;
+  /*max-width: 23%;*/
+
+  flex: 23%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  -moz-flex: 23%;
+  -moz-display: flex;
+  -moz-flex-direction: row;
+  -moz-justify-content: center;
+  -moz-align-items: center;
+
+  -webkit-flex: 23%;
+  -webkit-display: flex;
+  -webkit-flex-direction: row;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+
+  -ms-flex: 23%;
+  -ms-display: flex;
+  -ms-flex-direction: row;
+  -ms-justify-content: center;
+  -ms-align-items: center;
+}
+.photo:hover {
+  filter: grayscale(0%);
+}
+
+.photo img {
+  position: relative;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/* -- --  --   --    --    --   --  -- -- */
+
+
+#slider {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 120px;
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  -moz-display: flex;
+  -moz-flex-direction: row;
+  -moz-justify-content: center;
+
+  -webkit-display: flex;
+  -webkit-flex-direction: row;
+  -webkit-justify-content: center;
+
+  -ms-display: flex;
+  -ms-flex-direction: row;
+  -ms-justify-content: center;
+
+  display: none;
+}
+
+.preview {
+  position: relative;
+  height: 100%;
+  width: auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  -moz-display: flex;
+  -moz-flex-direction: row;
+  -moz-justify-content: center;
+  -moz-align-items: center;
+
+  -webkit-display: flex;
+  -webkit-flex-direction: row;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+
+  -ms-display: flex;
+  -ms-flex-direction: row;
+  -ms-justify-content: center;
+  -ms-align-items: center;
+}
+
+#img1 {
+  max-height: 100%;
+}
+.controls {
+  position: relative;
+  width: 5%;
+  height: 100%;
+
+  /*background-color: green;*/
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  -moz-display: flex;
+  -moz-flex-direction: column;
+  -moz-justify-content: space-around;
+  -moz-align-items: center;
+
+  -webkit-display: flex;
+  -webkit-flex-direction: column;
+  -webkit-justify-content: space-around;
+  -webkit-align-items: center;
+
+  -ms-display: flex;
+  -ms-flex-direction: column;
+  -ms-justify-content: space-around;
+  -ms-align-items: center;
+}
+.controls div {
+  position: relative;
+  width: 100%;
+  flex: 33%;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  -moz-display: flex;
+  -moz-flex-direction: row;
+  -moz-justify-content: center;
+  -moz-align-items: center;
+
+  -webkit-display: flex;
+  -webkit-flex-direction: row;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+
+  -ms-display: flex;
+  -ms-flex-direction: row;
+  -ms-justify-content: center;
+  -ms-align-items: center;
+
+  opacity: 0.6;
+}
+.controls div:hover {
+  opacity: 1;
+}
+.next, .previous {
+  width: 65%;
+  filter: invert(100%);
+}
+.close {
+  width: 50%;
+  filter: invert(100%);
+}
+
+
+
+#works footer {
+  position: absolute;
+  width: 100%;
+  height: 45px;
+  bottom: 70px;
+  z-index: 900;
+}
+#works footer p {
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #656969;
+  width: 100%;
+  line-height: 31px;
+}
+
+/* CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT */
+
+#noteField {
+  position: absolute;
+  width: 100%;
+  top: 50px;
+  bottom: 30px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  -moz-display: flex;
+  -moz-flex-direction: row;
+  -moz-justify-content: center;
+  -moz-align-items: center;
+
+  -webkit-display: flex;
+  -webkit-flex-direction: row;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+
+  -ms-display: flex;
+  -ms-flex-direction: row;
+  -ms-justify-content: center;
+  -ms-align-items: center;
+}
+
+#noteField form {
+  position: relative;
+  width: 80%;
+  /*height: 100%;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  -moz-display: flex;
+  -moz-flex-direction: column;
+  -moz-justify-content: space-between;
+
+  -webkit-display: flex;
+  -webkit-flex-direction: column;
+  -webkit-justify-content: space-between;
+
+  -ms-display: flex;
+  -ms-flex-direction: column;
+  -ms-justify-content: space-between;
+}
+
+#noteField form input, textarea {
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 15px;
+  background-color: #4CA1C0;
+  color: white;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 12px;
+  border: none;
+}
+
+#notetext {
+  background-color: rgba(0,0,0,0);
+  box-shadow: inset 0 0 20px #4CA1C0;
+  color: #4CA1C0;
+  font-size: 24px;
+  font-family: arial;
+  padding: 20px;
+}
+
+#noteField form div {
+  /*flex: 15%;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  -moz-display: flex;
+  -moz-flex-direction: row;
+  -moz-justify-content: center;
+
+  -webkit-display: flex;
+  -webkit-flex-direction: row;
+  -webkit-justify-content: center;
+
+  -ms-display: flex;
+  -ms-flex-direction: row;
+  -ms-justify-content: center;
+}
+#noteField form div input {
+  /*flex: 40%;*/
+}
+
+#noteField form input[type='submit'] {
+  /*flex: 10%;*/
+}
+
+#emailfield {
+  background-color: rgba(0,0,0,0);
+  box-shadow: inset 0 0 20px #4CA1C0;
+  color: #4CA1C0;
+  font-size: 20px;
+  font-family: arial;
+  padding: 14px;
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
