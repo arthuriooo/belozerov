@@ -1,4 +1,4 @@
-# InDoc
+# Belozerov
 
 ## The personal project 
 ### The portfolio site for photographer
